@@ -1,0 +1,738 @@
+
+body {
+    background-color:  #f6f5f1;
+    font: 12px/1.0em 'CartoGothicStsBook',Arial, Helvetica, sans-serif;
+}
+
+header {
+   background-image:url(../../images/header-background2.jpg);
+    height: 180px;
+    float: left;
+   width: 100%;
+    margin-top: 0px;
+}
+                       /*----Logo----*/
+/*header .logo-fundo{
+    background-image:url(../../images/header-background2.jpg);
+}*/
+header .logo {
+    width: 292px;
+    height: 118px;
+    float: left;
+    margin: 0;
+   background-image:url(../../images/logo-page-intra.png);
+}
+
+header .logo a{
+    width: 292px;
+    height: 118px;
+    float: left;
+    margin: 0;
+    text-indent: -9999px;    
+}
+
+
+
+                        /*----Login----*/
+header .login-intra {
+   /* float: right;*/
+    width: 450px;
+    margin: 30px 0px 0 0;  
+}
+
+header .login-intra #form-login {
+    width: 261px;
+    float: right;
+}
+
+header .login-intra #form-login .welcome {
+    font-size: 20px;
+    color: #0082b6;
+    width: 500px;
+    line-height: 90%;
+}
+
+header .login-intra #form-login .botao-sair {
+    float: left;
+    clear: both;
+     width: 39px;
+    height: 21px;
+    
+}
+
+/*-----------------menu-----------------*/
+    /*-----------------menu intra-----------------*/
+            header .menu-intra{
+                float: left;
+	            width: 940px;
+            }
+
+		
+			header .menu-intra > ul{
+                
+                margin: auto !important;
+	            width: auto !important;
+	            height: 30px;
+	            width: 100%;
+                list-style: none;
+			}
+			
+			header .menu-intra > ul > li{  
+            
+				float: left;
+                margin: 0 12px 0 12px;
+                height: 40px;
+                line-height: 30px;
+                width: auto !important;
+               
+			}
+			
+			
+
+
+			/*em construção*/
+			header .menu-intra > ul > .deeper > ul {
+				display: none;
+                position: absolute;
+                background: #b8b4ab;
+                padding: 10px;
+                border-top: 3px solid #c8cd2e;
+            
+             /*border-radius: 0 0 15px 15px;*/
+                border-radius: 15px;
+                list-style: none;               
+               
+			}
+	
+            header .menu-intra > ul > .deeper > ul:after { 
+                content:"";
+                border-color: transparent transparent #c8cd2e transparent;  
+                border-style: solid;  
+                border-width: 7px;  
+                display: block;  
+                height: 0;  
+                left: 10px;
+                position: absolute;  
+                top: -16px;
+                width: 0; 
+                
+            }
+
+            header .menu-intra ul .deeper:hover > ul {
+                display: block;
+                list-style: none;
+             
+                
+            } 
+
+            header .menu-intra ul .deeper:hover > ul li {
+                clear: both;
+                float: left;
+                line-height: 30px;
+            }
+
+            header .menu-intra ul .deeper .deeper > ul {
+                display: block;	
+                /*margin-left: 20px;*/
+                list-style: none;
+            }
+            header .menu-intra ul .deeper .deeper > a, .menu-intra ul .deeper .deeper > .separator {
+            color: #7c8f08 !important;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            text-decoration: none;           
+            }
+
+            header .menu-intra ul li a, .menu-intra ul li .separator {
+            font-size: 14px;
+            color: #fefeff;
+            text-transform:inherit !important;
+            cursor: pointer;
+            text-decoration: none;
+            }
+
+            header .menu-intra ul li a:hover {
+                color: #EEE;	
+            }
+
+header .menu-intra ul li:first-child{margin: 0 12px 0 0;}
+		
+/*----------------------------------*/
+
+                                                                /*CORPO*/
+
+nav{
+    clear: both;   
+}
+nav #corpo{
+    margin-top: 45px;
+    background-color: white;
+    border-radius: 10px;   
+   margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+                                                                         /*--------menu lateral-----*/
+nav #corpo .menu-lateral{
+    width: 260px;
+    margin-top: 30px;
+    border-right: 2px solid #eaeaed;
+    margin-left: 10px;
+    min-height: 400px;
+}
+nav #corpo .menu-lateral > ul{
+    margin-right: 45px;
+    list-style: none;
+   
+}
+
+nav #corpo .menu-lateral > ul > li{
+    display: list-item;
+    margin-bottom: 30px;
+    text-align: right;
+    
+   /* position:relative;*/
+}
+
+nav #corpo .menu-lateral > ul > li > a{
+    font-weight: 600;
+    color: #007caf !important;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav #corpo .menu-lateral > ul > li > ul ,
+nav #corpo .menu-lateral > ul > li > ul .drop2 ,
+nav #corpo .menu-lateral > ul > li > ul .drop2 .drop3
+{
+ display: none;
+    list-style: none;
+}
+
+nav #corpo .menu-lateral > ul > li > ul:after ,
+nav #corpo .menu-lateral > ul > li > ul > li > .drop2:after ,
+nav #corpo .menu-lateral > ul > li > ul > li > .drop2 > li > .drop3:after {
+    
+                content:"";
+                border-color:  transparent #c8cd2e transparent  transparent;  
+                border-style: solid;  
+                border-width: 7px;  
+                display: block;  
+                height: 0;
+                position: absolute;  
+                width: 0;
+                left: -16px;
+                top: 5px;   
+}
+
+
+nav #corpo .menu-lateral > ul > li:hover > ul {
+    width: 200px;
+    display: block;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: -40px;
+    background-color: #b8b4ab;  
+    border-left: 3px solid #c8cd2e;    
+}
+ nav #corpo .menu-lateral > ul > li > ul > li:hover .drop2 {
+      width: 200px;
+    display: block;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -20px;
+    background-color: #b8b4ab;  
+    border-left: 3px solid #c8cd2e;  
+ }
+nav #corpo .menu-lateral > ul > li > ul > li > .drop2 > li:hover .drop3 {
+      width: 200px;
+    display: block;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -20px;
+    background-color: #b8b4ab;  
+    border-left: 3px solid #c8cd2e;  
+ }
+
+
+nav #corpo .menu-lateral > ul > li:hover > ul > li ,
+nav #corpo .menu-lateral > ul > li > ul > li:hover .drop2 li ,
+nav #corpo .menu-lateral > ul > li > ul > li > .drop2 li:hover .drop3 li 
+{
+   
+    text-align: left;
+    margin-bottom: 0;
+    padding: 10px;
+    display: list-item;
+  
+   
+}
+nav #corpo .menu-lateral > ul > li:hover > ul > li a ,
+nav #corpo .menu-lateral > ul > li > ul > li:hover > .drop2 li a ,
+nav #corpo .menu-lateral > ul > li > ul > li > .drop2 li:hover > .drop3 li a
+
+{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 100%;
+    display: block;
+}
+
+
+
+
+/*________________________fim menu lateral _______________________*/
+
+nav #corpo .gov{
+   /* clear: right;  */
+    height: 40px;
+    width: 209px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+   /* margin-right: 30px;  */
+}
+nav #corpo #menu-lateral .gov img{
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+}
+nav #corpo .pa{
+    float: left;
+    color: #FFF;
+    background: #007caf;
+    padding: 5px !important;
+    border-radius:10px;
+    margin-top: 20px !important;
+    margin-left: 10px;
+}
+                                            /* direita e banner*/
+
+nav #corpo #direita{
+    width: 660px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+nav #corpo #direita .banner{
+    width: 660px;
+    height: 110px;
+    background-image: url(../../images/banner_IRPF2015.jpg);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+                                          /* direita e GALERIA*/
+nav #corpo #direita .fiquesabendo{
+    width: auto;
+    height: 40px;   
+    margin-left: 20px;
+    margin-top: 20px;
+}
+                                           
+nav #corpo #direita .fiquesabendo h2{
+     width: auto;
+    padding: 0 0 0 10px;
+    height: 40px;
+    line-height: 28px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    color: #b3b1aa;
+}
+
+nav #corpo #direita .fiquesabendo h2 span{
+    font-weight: 600;
+}
+
+nav #corpo #direita #galeria{
+    width: 650px;
+    /*height:340px;*/
+    height: 380px; 
+    margin-left: 20px;
+    /*margin-top: 10px;*/
+    
+    
+   /* border: 2px solid blue;*/
+    /*background-color: black;*/
+}
+
+nav #corpo #direita #galeria .box1{
+    width: 170px;
+    height: 340px;
+   /* margin-right: 70px;*/
+    /*border: 0 solid blue;*/
+    /*background-color: red;  */  
+}
+  
+nav #corpo #direita #galeria .box-fim{
+    width: 170px;
+    height: 320px;
+    margin-right: 0px;
+    border: 0 solid blue;
+    /*background-color: red;*/    
+}
+
+nav #corpo #direita #galeria .box-fim .mat, nav #corpo #direita #galeria .box1 .mat{
+    width: 170px;
+    height: 160px;
+    margin: 20px 0;
+    
+    
+   /* background-color: blue;*/
+}
+
+
+nav #corpo #direita #galeria .figura{
+    width: 171px;
+    height: 94px;
+    background-image: url(../../images/demomat.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+}
+
+
+
+
+
+
+nav #corpo #direita #galeria .titulo{
+    width: 171px;
+    margin: 0 0 0 0;
+}
+nav #corpo #direita #galeria .titulo h2{
+    color: #a6a59a;
+    font-size: 17px;
+}
+
+nav #corpo #direita #galeria .data{
+    width: 166px;
+    margin: 0 0 0 5px;
+    color: #ce8b42; 
+    font-size: 11px;
+    font-weight: 600;
+}
+nav #corpo #direita #galeria .data p{
+    font-size: 14px;
+    width: 100%;
+    line-height: 18px;
+    font-weight: 600; 
+    color: #6c7368;  
+}
+
+                                    /*------inforhme para baixo------*/
+
+nav #corpo #direita #modulos{
+ /* margin-left: 20px;*/
+}
+nav #corpo #direita #modulos .inforhme{
+    margin: 0;
+    width: 322px;
+    height: 303px;
+    padding: 10px 31px 0 31px;
+    border: 0.5px solid #E0EEE0;
+       /* #B4CDCD;*/
+    border-radius: 8px;
+    box-shadow: -1px 0.2px 10px 0.2px #C1CDC1 inset;   
+}
+nav #corpo #direita #modulos .inforhme .titulo, nav #corpo #direita #modulos .resolucao .titulo{
+    width: 360px;
+    margin: 0 0 20px -22px;
+    height: 20px;
+
+}
+nav #corpo #direita #modulos .inforhme .titulo h2{
+    border-style: none;
+    background: url(../../images/title-page-h2.png), url(../../images/title-page-h2-span.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat;
+    
+    float: left;
+    padding: 0 0 0 10px;
+    line-height: 28px;
+    font-size: 28px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: #b3b1aa;
+}
+
+
+nav #corpo #direita #modulos .inforhme .titulo h2 span{
+    font-weight: 600;
+    color: #a4be1b;
+}
+nav #corpo #direita #modulos .inforhme .categories{
+    float: right;
+}
+
+nav #corpo #direita #modulos .inforhme .menuinfo, nav #corpo #direita #modulos .resolucao .menuinfo{
+    height: 220px;
+    width: 320px;
+    margin-top: 10px;
+}
+nav #corpo #direita #modulos .inforhme select option{
+    display: block;
+    width: 100%;
+    margin: 0 0 15px 0;
+    clear: both;
+   
+}
+                                                /*  RESOLUÇÃO  */
+nav #corpo #direita #modulos .resolucao{
+    margin: 0;
+    margin-top: 20px;
+    width: 322px;
+    height: 303px;
+    padding: 10px 31px 0 31px;
+    border: 0.5px solid #E0EEE0;
+       /* #B4CDCD;*/
+    border-radius: 8px;
+    box-shadow: -1px 0.2px 10px 0.2px #C1CDC1 inset;   
+}
+nav #corpo #direita #modulos .resolucao .titulo h2{
+    border-style: none;
+    background: url(../../images/title-page-h2-four.png), url(../../images/title-page-h2-span-four.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat;
+    float: left;
+    padding: 0 0 0 10px;
+    line-height: 28px;
+    font-size: 28px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: #b3b1aa;
+}
+ nav #corpo #direita #modulos .resolucao .categories{
+ font-size: 14px;
+ float: right;
+     padding-top: 20px;
+ }
+
+nav #corpo #direita #modulos .resolucao select option{
+    display: list-item;
+    font-size: 12px;
+    margin: 0 0 15px 0;
+    clear: both;
+   /* height: 30px;*/       
+}
+                                            /*onde estou*/
+
+nav #corpo #direita #modulos .onde{
+   
+    width: 270px;
+    height: 313px;    
+    margin-left: 20px;
+    background-color:#E8E8E8 ;
+    border: 0.90px solid black;
+    border-radius: 8px;    
+    box-shadow: -1px 0.2px 10px 0.2px #C1CDC1 inset;  
+   
+    }
+nav #corpo #direita #modulos .onde .titulo h2{
+   
+    background: url(../../images/title-page-h2-three.png), url(../../images/title-page-h2-span-three.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat,no-repeat;
+    float: left;
+    margin-left: 10px;
+    line-height: 28px;
+    font-size: 28px;
+    height: 40px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+}
+                                                                /* formulario ONDEESTOU*/
+nav #corpo #direita #modulos .onde .formu{
+margin: 5px 0 0 20px;
+width: 210px;
+float: left;
+}
+nav #corpo #direita #modulos .onde .formu .inputgrande{
+    width: 200px;   
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #474c4e;
+
+}
+nav #corpo #direita #modulos .onde .formu .inputpequeno{
+    width: 47% !important; 
+     
+    border-radius: 10px; 
+    font-size 12px; 
+    margin-bottom: 5px;
+    color: #474c4e;    
+    background-color: #fff;
+   
+
+}
+
+nav #corpo #direita #modulos .onde .operadores{
+    float: left;
+    width: 44% !important;
+    margin-right: 10px;
+    
+}
+nav #corpo #direita #modulos .onde .btform{
+   
+    margin-right: 120px;
+    
+}
+/* FIM formulario ONDEESTOU*/
+                                                                                /* FALE COMO O PRESIDENTE*/
+                                
+nav #corpo #direita #modulos .falecom{
+    background-image:url(../../images/botao_fp.png);
+    width: 230px;
+    height: 101px;
+    margin: 10px 0 0 20px;
+    
+}
+nav #corpo #direita #modulos .classificados{
+    background-image:url(../../images/classificados.png);
+    background-repeat: no-repeat;
+    width: 265px;
+    height: 120px;
+    margin: 10px 0 0 20px;
+    
+}
+
+nav #corpo #direita #modulos .sgr{
+    background-image:url(../../images/botao_sgr.png);
+    background-repeat: no-repeat;
+    width: 265px;
+    height: 120px;
+    margin: 10px 0 0 20px;
+    
+}
+
+
+                                            /*RODAPE*/
+footer{
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+    background: #087CCD;    
+}
+
+footer #rodape {
+   float: left;
+    width: 100%;
+}
+
+footer #rodape ul{
+    list-style: none;
+}
+footer #rodape ul li{
+    float: left;
+    width: 164px !important;
+    height: 100px;
+    margin-right: 0;
+    text-align: left !important;
+    display: list-item;
+    
+}
+footer #rodape ul li a {
+    color: #fff !important;
+    font-size: 12px !important;
+    float: left;
+}
+
+footer #rodape2{
+    width: 100%;
+    float: left;
+    background-color: #ccc;
+    padding: 10px 0;
+}
+footer #rodape2 p{
+    font-size: 10px;}
+
+
+/*MEDIA QUERY*/
+@media (min-width: 1200px) {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+        nav #corpo #direita #galeria .box1, nav #corpo #direita #galeria .box-fim{
+       
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 0px;     
+        }
+
+        nav #corpo #direita #galeria{
+        margin-bottom: 100px;
+        }
+}
+@media (max-width: 767px) {
+    
+      nav #corpo #direita {
+        margin-left: 5px;
+        width: auto;
+      }
+    
+       nav #corpo #direita .banner{
+        margin-left: 0px;
+        width: auto;
+        background-image: url(../../images/banner_IRPF2015min.jpg);
+        }
+    
+nav #corpo #direita .banner h2
+    { width: auto;}
+    
+        nav #corpo #direita #galeria{
+        height: 1200px;
+        width: auto;
+   
+        }
+           
+    
+    
+        
+    
+}
+
+@media (max-width: 480px) {
+    
+     nav #corpo #direita {
+        margin-left: 1px;
+       /* width: 480px;*/
+        width: auto;
+        
+        }
+     nav #corpo #direita .banner{
+        margin-left: 0px;
+        width: auto;
+        background-image: url(../../images/banner_IRPF2015min_2.jpg);
+        }
+    
+    nav #corpo #direita .fiquesabendo 
+    { width: auto;}
+    nav #corpo #direita .fiquesabendo h2
+    { width: auto;}
+
+    nav #corpo #direita #galeria { width: auto;}
+    
+    nav #corpo #direita #galeria .box1,
+    nav #corpo #direita #galeria .box-fim{}
+        
+}
+
+
+
+
+
+
